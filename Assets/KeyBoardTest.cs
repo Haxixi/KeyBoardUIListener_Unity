@@ -13,8 +13,6 @@ public class KeyBoardTest : MonoBehaviour
 
     private Image curTransform;
 
-    List<Image> templist = new List<Image>();
-
     private int s;
 
     private int w;
@@ -45,30 +43,9 @@ public class KeyBoardTest : MonoBehaviour
             }
         }
 
-        images[s].DOFade(0f, 1);
+        images[0].DOFade(0f, 1);
 
     }
-
-
-    //Image BubbleSort(List<Image> list)
-    //{
-    //    Image temp;
-
-    //    for (int i = 0; i < list.Count; i++)
-    //    {
-    //        for (int j = i + 1; j < list.Count; j++)
-    //        {
-    //            if (SetNameNum(images[j].name) < SetNameNum(images[i].name))
-    //            {
-    //                temp = images[j];
-    //                images[j] = images[i];
-    //                images[i] = temp;
-    //            }
-    //        }
-    //    }
-
-    //    return list[0];
-    //}
 
 
     void Update()
@@ -137,17 +114,6 @@ public class KeyBoardTest : MonoBehaviour
 
         return 0;
     }
-
-    //int PreSerialNumber(Image preImage)
-    //{
-    //    for (int i = 0; i < images.Length; i++)
-    //    {
-    //        if (images[i] == preImage)
-    //            return i;
-    //    }
-
-    //    return 0;
-    //}
 
 
     void SetButton()
